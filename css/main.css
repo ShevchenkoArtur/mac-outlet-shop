@@ -515,7 +515,6 @@ h1 {
 .search {
   margin-top: 40px;
   margin-bottom: 30px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -607,8 +606,27 @@ h1 {
 }
 
 .filters {
+  margin-right: 50px;
   width: 320px;
   height: 320px;
+}
+
+.select__button {
+  position: relative;
+  padding: 16px;
+  width: 100%;
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.select__button .icon-arrow_left {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
