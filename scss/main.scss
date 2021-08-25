@@ -1,3 +1,5 @@
+@import './fonts/roboto';
+@import './fonts/icomoon';
 @import './utils/variables';
 @import './base/normalize';
 @import './utils/mixins';
@@ -7,3 +9,6 @@
 @import './components/header';
 @import './components/shop-cart';
 @import './components/slider';
+@import './components/search';
+@import './components/cards';
+@import './components/filters';

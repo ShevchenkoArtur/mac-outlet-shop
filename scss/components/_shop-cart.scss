@@ -1,4 +1,4 @@
-.shop-cart{
+.shop-cart {
   position: relative;
 
   &__cart {
@@ -15,5 +15,10 @@
     right: 25px;
     background-color: $main-background-color;
     color: #fff;
+  }
+
+  .icon-cart {
+    color: #000;
+    font-size: 20px;
   }
 }

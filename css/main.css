@@ -1,3 +1,64 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("./../fonts/icomoon/icomoon.eot");
+  src: url("./../fonts/icomoon/icomoon.eot") format("embedded-opentype"), url("./../fonts/icomoon/icomoon.ttf") format("truetype"), url("./../fonts/icomoon/icomoon.woff") format("woff"), url("./../fonts/icomoon/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-settings:before {
+  content: "";
+}
+
+.icon-search1:before {
+  content: "";
+}
+
+.icon-like_filled:before {
+  content: "";
+}
+
+.icon-like_empty:before {
+  content: "";
+}
+
+.icon-filter:before {
+  content: "";
+  color: #fff;
+}
+
+.icon-close:before {
+  content: "";
+}
+
+.icon-check:before {
+  content: "";
+}
+
+.icon-cart:before {
+  content: "";
+}
+
+.icon-arrow_left:before {
+  content: "";
+}
+
 *,
 *:before,
 *:after {
@@ -343,7 +404,7 @@ template {
   display: none;
 }
 
-.shop-cart__badge, .shop-cart__cart {
+.search__button, .shop-cart__badge, .shop-cart__cart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,18 +424,24 @@ template {
 }
 
 body {
-  font-family: sans-serif;
-  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: 4em;
+  color: #fff;
+  font-weight: normal;
+  font-size: 72px;
   margin: 17px 0;
 }
 
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -403,10 +470,14 @@ h1 {
   background-color: #0e49b5;
   color: #fff;
 }
+.shop-cart .icon-cart {
+  color: #000;
+  font-size: 20px;
+}
 
 .slider {
   width: 100%;
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 .slider__item {
@@ -423,8 +494,9 @@ h1 {
   }
 }
 .slider__item img {
+  object-fit: cover;
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 .slider__button {
   text-align: center;
@@ -438,6 +510,105 @@ h1 {
 
 .showing {
   display: block;
+}
+
+.search {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.search .icon-search1 {
+  color: #000;
+}
+.search__input {
+  display: flex;
+  width: 100%;
+}
+.search__input input {
+  width: 100%;
+}
+.search__buttons {
+  display: flex;
+}
+.search__button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #1461e0;
+  color: #fff;
+  transition: 300ms;
+  border: 0;
+}
+.search__button:hover {
+  background-color: #000;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -25px -20px;
+}
+.cards__item {
+  flex-basis: 50%;
+  padding: 25px 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.card__image {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+.card__image .icon-like_empty {
+  font-size: 25px;
+}
+.card__image img {
+  padding: 35px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.card__like {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.card__main {
+  text-align: center;
+}
+.card__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+.card__info {
+  font-size: 14px;
+  color: #767272;
+}
+.card__button {
+  margin: 18px 0 20px 0;
+}
+.card__footer {
+  border-radius: 0 0 10px 10px;
+  background-color: #dae2ea;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.filters {
+  width: 320px;
+  height: 320px;
 }
 
 /*# sourceMappingURL=main.css.map */

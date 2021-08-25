@@ -11,7 +11,7 @@ const showSlide = () => {
             if (i !== slideNum) slides[i].classList.remove('showing')
         }
         slideNum++
-    }, 3000)
+    }, 4000)
 }
 
 showSlide()
